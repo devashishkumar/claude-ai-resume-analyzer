@@ -1,7 +1,8 @@
 // ai-career-coach-loop.js
-import fs from "fs";
-import readline from "readline";
-import { Anthropic } from "@anthropic-ai/sdk";
+const fs = require("fs");
+const readline = require("readline");
+const { Anthropic } = require("@anthropic-ai/sdk");
+require("dotenv").config();
 
 // Initialize Claude client
 const client = new Anthropic({
@@ -13,12 +14,12 @@ function loadFile(path) {
   return fs.readFileSync(path, "utf8");
 }
 
-// Load resume and job description once
-const resume = loadFile("resume.pdf"); // ideally parsed text from PDF
-const jobDesc = loadFile("job_description.txt");
+// Load resume and job description from docs folder
+const resume = loadFile("./docs/resume.docx"); // ideally parsed text from PDF
+const jobDesc = loadFile("./docs/job_description.txt");
 
 console.log("=== AI Resume + Career Coach ===");
-console.log("Files loaded: resume.pdf, job_description.txt");
+console.log("Files loaded from docs folder: resume.docx, job_description.txt");
 console.log("Type your questions (e.g., 'How can I improve for a software engineer role?').");
 console.log("Type 'exit' to quit.\n");
 
@@ -31,7 +32,7 @@ const rl = readline.createInterface({
 
 async function askClaude(query) {
   const prompt = `
-You are an AI career coach.
+You are an AI resume analyzer.
 Here is the candidate's resume:
 ${resume}
 
@@ -44,7 +45,8 @@ Please provide actionable suggestions, including missing skills, tailored bullet
 
   try {
     const response = await client.messages.create({
-      model: "claude-3-opus-20240229",
+      // Use the latest Claude 3.5 model
+      model: "claude-3-5-sonnet-20241022",
       max_tokens: 500,
       messages: [{ role: "user", content: prompt }],
     });

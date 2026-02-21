@@ -1,11 +1,11 @@
 {
   "name": "cloude-ai-resume-analyzer",
   "version": "1.0.0",
-  "main": "claude.js",
+  "main": "resume-analyzer.js",
   "scripts": {
-    "start": "node ./claude.js",
-    "build-index": "node ./claude.js --build",
-    "ask": "node ./claude.js --ask"
+    "start": "node ./resume-analyzer.js",
+    "build-index": "node ./resume-analyzer.js --build",
+    "ask": "node ./resume-analyzer.js --ask"
   },
   "author": "Ashish",
   "license": "ISC",

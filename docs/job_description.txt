@@ -1,0 +1,44 @@
+Job Title: Software Developer
+
+Job Description:
+We are seeking a motivated and skilled Software Developer to join our dynamic engineering team. The ideal candidate will have experience in full-stack development, designing scalable web applications, and integrating modern technologies to improve user experiences.
+
+Responsibilities:
+
+Develop, maintain, and enhance web applications using JavaScript, Python, React.js, Node.js, and related technologies.
+
+Collaborate with cross-functional teams to design and implement APIs, database solutions, and third-party integrations.
+
+Participate in Agile/Scrum processes, including sprint planning, code reviews, and continuous improvement.
+
+Write unit and integration tests to ensure code quality and reliability.
+
+Optimize application performance, including database queries and server-side logic.
+
+Contribute to DevOps practices, including CI/CD pipelines, Docker containerization, and cloud deployments.
+
+Work on personal and team projects to innovate and improve product offerings.
+
+Qualifications:
+
+Bachelor’s degree in Computer Science or a related field.
+
+3–5 years of professional experience in software development.
+
+Proficiency in programming languages: JavaScript, Python, Java, C#.
+
+Experience with frameworks and libraries: React.js, Node.js, Django, Express.
+
+Knowledge of databases: PostgreSQL, MongoDB.
+
+Familiarity with tools: Git, Docker, AWS, Jenkins.
+
+Strong understanding of REST APIs, Agile/Scrum, Unit Testing, CI/CD.
+
+Excellent problem-solving, debugging, and communication skills.
+
+Preferred:
+
+Experience developing mobile applications (React Native) or e-commerce platforms.
+
+Relevant certifications such as AWS Certified Developer – Associate or Certified Scrum Developer (CSD)
