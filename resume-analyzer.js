@@ -1,4 +1,4 @@
-// ai-career-coach-loop.js
+// resume-analyzer.js
 const fs = require("fs");
 const readline = require("readline");
 const { Anthropic } = require("@anthropic-ai/sdk");
