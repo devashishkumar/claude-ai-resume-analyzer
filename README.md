@@ -15,7 +15,7 @@ It analyzes your resume and a job description, then answers your questions with 
 ---
 
 ## 📂 Project Structure
-
+```
 ├── docs/
 │   ├── resume.docx
 │   └── job_description.txt
@@ -23,7 +23,7 @@ It analyzes your resume and a job description, then answers your questions with 
 ├── package.json
 ├── .env
 └── README.md
-
+```
 
 ---
 
@@ -41,24 +41,28 @@ It analyzes your resume and a job description, then answers your questions with 
    ```
 3. Create a .env file in the project root:
 
-ANTHROPIC_API_KEY=your_api_key_here
+    ```bash
+    ANTHROPIC_API_KEY=your_api_key_here
+    ```
+4. Start Application
 
-npm start
+    ```bash
+    npm start
+    ```
 
-
-=== AI Resume + Career Coach ===
+### === AI Resume + Career Coach ===
 Files loaded from docs folder: resume.docx, job_description.txt
 Type your questions (e.g., 'How can I improve for a software engineer role?').
 Type 'exit' to quit.
 
 > How can I improve for a software engineer role?
 
-=== Claude's Suggestions ===
+### === Claude's Suggestions ===
 - Add AWS and Kubernetes experience
 - Tailor bullet points to highlight cloud projects
 - Emphasize CI/CD pipeline contributions
 
-🛠️ Technical Notes
+### 🛠️ Technical Notes
 File Formats:
 
 Resume can be .docx or .pdf. Currently, the script reads raw text.
@@ -67,24 +71,25 @@ For .docx parsing, consider using docx-parser
 
 For .pdf parsing, use pdf-parse.
 
-Model Selection:
-
+### Model Selection:
+```bash
 Default: claude-3-5-sonnet-20241022 (balanced speed + quality).
+```
 
-Alternative: claude-3-5-haiku-20241022 (faster, cheaper).
+Alternative: `claude-3-5-haiku-20241022` (faster, cheaper).
 
 You can switch models by editing the model field in resume-analyzer.js.
 
-🔧 Troubleshooting
-API Key Errors:
-Ensure .env contains a valid ANTHROPIC_API_KEY.
+## 🔧 Troubleshooting
+### API Key Errors:
+**Solution**: Ensure .env contains a valid ANTHROPIC_API_KEY.
 
-File Not Found:
-Verify docs/resume.docx and docs/job_description.txt exist.
+### File Not Found:
+**Solution**: Verify docs/resume.docx and docs/job_description.txt exist.
 Paths are relative to the project root.
 
-Encoding Issues:
-If resume text looks garbled, use a parser library instead of fs.readFileSync.
+### Encoding Issues:
+**Solution**: If resume text looks garbled, use a parser library instead of fs.readFileSync.
 
 
 ## Note

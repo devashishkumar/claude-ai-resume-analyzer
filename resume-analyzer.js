@@ -15,7 +15,7 @@ function loadFile(path) {
 }
 
 // Load resume and job description from docs folder
-const resume = loadFile("./docs/resume.docx"); // ideally parsed text from PDF
+const resume = loadFile("./docs/resume.docx"); // parsed text from resume.docx for better results
 const jobDesc = loadFile("./docs/job_description.txt");
 
 console.log("=== AI Resume + Career Coach ===");
